@@ -8,13 +8,50 @@
   display: flex;
   align-items: center;
   font-family: "Josefin Sans", sans-serif;
+  color: #444;
 }
 
 .top-left,
 .top-right {
   flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-icon {
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.top-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .top-center {
   flex: 6;
+}
+
+.top-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.top-list-item {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.top-icon.search {
+  font-size: 18px;
+  color: #666;
+  margin-left: 15px;
 }
