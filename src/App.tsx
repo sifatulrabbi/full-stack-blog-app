@@ -1,10 +1,11 @@
 import React from "react";
+import { TopBar } from "./Components";
 import "./Styles/CSS/main.css";
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <TopBar />
     </div>
   );
 };
