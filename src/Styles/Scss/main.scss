@@ -1,0 +1,23 @@
+@import "./variables";
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+@import "./topBar";

@@ -1,0 +1,51 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.top {
+  height: 50px;
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.top-left,
+.top-right {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.top-center {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+}
+/*# sourceMappingURL=main.css.map */
