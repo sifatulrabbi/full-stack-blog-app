@@ -35,10 +35,11 @@ body {
           align-items: center;
   font-family: "Josefin Sans", sans-serif;
   color: #444;
+  z-index: 1100;
 }
 
-.top-left,
-.top-right {
+.topLeft,
+.topRight {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
@@ -53,13 +54,13 @@ body {
           justify-content: center;
 }
 
-.top-icon {
+.topIcon {
   font-size: 20px;
   margin-right: 10px;
   cursor: pointer;
 }
 
-.top-img {
+.topImg {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -67,13 +68,13 @@ body {
      object-fit: cover;
 }
 
-.top-center {
+.topCenter {
   -webkit-box-flex: 6;
       -ms-flex: 6;
           flex: 6;
 }
 
-.top-list {
+.topList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,16 +85,54 @@ body {
   text-transform: uppercase;
 }
 
-.top-list-item {
+.topListItem {
   margin-right: 20px;
   font-size: 18px;
   font-weight: 300;
   cursor: pointer;
 }
 
-.top-icon.search {
+.topIcon.search {
   font-size: 18px;
   color: #666;
   margin-left: 15px;
+}
+
+.header {
+  margin-top: 60px;
+}
+
+.headerTitles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lora", sans-serif;
+  color: #444;
+}
+
+.headerTitle {
+  position: absolute;
+  font-size: 20px;
+  top: 14%;
+}
+
+.headerTitle.large {
+  top: 16%;
+  font-size: 100px;
+}
+
+.headerImg {
+  width: 100%;
+  height: 450px;
+  margin-top: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */

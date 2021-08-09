@@ -9,48 +9,49 @@
   align-items: center;
   font-family: "Josefin Sans", sans-serif;
   color: #444;
+  z-index: 1100;
 }
 
-.top-left,
-.top-right {
+.topLeft,
+.topRight {
   flex: 3;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.top-icon {
+.topIcon {
   font-size: 20px;
   margin-right: 10px;
   cursor: pointer;
 }
 
-.top-img {
+.topImg {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.top-center {
+.topCenter {
   flex: 6;
 }
 
-.top-list {
+.topList {
   display: flex;
   justify-content: center;
   list-style-type: none;
   text-transform: uppercase;
 }
 
-.top-list-item {
+.topListItem {
   margin-right: 20px;
   font-size: 18px;
   font-weight: 300;
   cursor: pointer;
 }
 
-.top-icon.search {
+.topIcon.search {
   font-size: 18px;
   color: #666;
   margin-left: 15px;
