@@ -1,9 +1,15 @@
 import React from "react";
+import { Post } from "..";
 
 const Posts: React.FC = () => {
   return (
     <div className="posts">
-      <p>Posts</p>
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
     </div>
   );
 };
