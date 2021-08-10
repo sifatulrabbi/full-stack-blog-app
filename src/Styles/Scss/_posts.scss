@@ -10,7 +10,7 @@
   margin-top: 20px;
 }
 
-.post {
+.postCard {
   min-width: 300px;
   flex: 1;
   margin: 0 15px 40px 15px;
@@ -26,19 +26,19 @@
   }
 }
 
-.postImg {
+.postCardImg {
   width: 100%;
   height: 220px;
   object-fit: cover;
 }
 
-.postInfo {
+.postCardInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.postCat {
+.postCardCat {
   font-family: $varela;
   font-size: 11px;
   color: #be9656;
@@ -48,7 +48,7 @@
   cursor: pointer;
 }
 
-.postTitle {
+.postCardTitle {
   font-family: $josefin;
   font-size: 24px;
   font-weight: 700;
@@ -57,14 +57,14 @@
   cursor: pointer;
 }
 
-.postDate {
+.postCardDate {
   font-family: $lora;
   font-style: 13px;
   color: #999;
   margin-top: 15px;
 }
 
-.postDesc {
+.postCardDesc {
   font-family: $varela;
   font-size: 14px;
   color: $textPrimary;

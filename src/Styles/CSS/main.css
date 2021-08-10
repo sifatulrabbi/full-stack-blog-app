@@ -275,7 +275,7 @@ textarea {
   margin-top: 20px;
 }
 
-.post {
+.postCard {
   min-width: 300px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -286,21 +286,21 @@ textarea {
   overflow: hidden;
 }
 
-.post hr {
+.postCard hr {
   width: 100%;
   height: 1px;
   background-color: #ccc;
   border: none;
 }
 
-.postImg {
+.postCardImg {
   width: 100%;
   height: 220px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.postInfo {
+.postCardInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,7 +313,7 @@ textarea {
           align-items: center;
 }
 
-.postCat {
+.postCardCat {
   font-family: "Varela Round", sans-serif;
   font-size: 11px;
   color: #be9656;
@@ -323,7 +323,7 @@ textarea {
   cursor: pointer;
 }
 
-.postTitle {
+.postCardTitle {
   font-family: "Josefin Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -332,14 +332,14 @@ textarea {
   cursor: pointer;
 }
 
-.postDate {
+.postCardDate {
   font-family: "Lora", serif;
   font-style: 13px;
   color: #999;
   margin-top: 15px;
 }
 
-.postDesc {
+.postCardDesc {
   font-family: "Varela Round", sans-serif;
   font-size: 14px;
   color: #444;
@@ -351,5 +351,24 @@ textarea {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+}
+
+.articlePage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.article {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+}
+
+.articleWrapper {
+  padding: 20px;
 }
 /*# sourceMappingURL=main.css.map */
