@@ -1,12 +1,15 @@
 import React from "react";
-import { Header } from "../../Components";
+import { Header, Sidebar, Posts } from "../../Components";
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <>
       <Header />
-      Home Page
-    </div>
+      <div className="home">
+        <Posts />
+        <Sidebar />
+      </div>
+    </>
   );
 };
 

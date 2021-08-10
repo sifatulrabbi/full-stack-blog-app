@@ -20,5 +20,20 @@ body {
   color: black;
 }
 
+ul {
+  list-style-type: none;
+}
+
+button,
+input,
+textarea {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
 @import "./topBar";
+@import "./home";
 @import "./header";
+@import "./sidebar";
+@import "./posts";
