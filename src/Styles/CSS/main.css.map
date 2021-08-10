@@ -14,7 +14,7 @@
         "../Scss/_variables.scss",
         "../Scss/_posts.scss",
         "../Scss/_variables.scss",
-        "../Scss/_singlePost.scss",
+        "../Scss/_post.scss",
         "../Scss/_variables.scss"
     ],
     "names": [],
