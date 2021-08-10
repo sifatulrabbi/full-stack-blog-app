@@ -11,4 +11,30 @@
 
 .articleWrapper {
   padding: 20px;
+  width: 100%;
+}
+
+.articleImg {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.articleTitle {
+  font-size: 24px;
+  font-family: $josefin;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.articleEdit {
+  font-size: 16px;
+
+  .articleIcon {
+    color: $textPrimary;
+    margin-left: 10px;
+    cursor: pointer;
+  }
 }
