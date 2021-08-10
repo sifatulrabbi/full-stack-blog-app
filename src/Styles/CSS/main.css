@@ -148,18 +148,18 @@ textarea {
 .headerTitle {
   position: absolute;
   font-size: 20px;
-  top: 14%;
+  top: 90px;
 }
 
 .headerTitle.large {
-  top: 16%;
+  top: 110px;
   font-size: 100px;
 }
 
 .headerImg {
   width: 100%;
   height: 450px;
-  margin-top: 80px;
+  margin-top: 75px;
   -o-object-fit: cover;
      object-fit: cover;
 }
