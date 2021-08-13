@@ -45,9 +45,11 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   color: #444;
   z-index: 1100;
+  -webkit-box-shadow: 0 3px 8px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 8px -2px rgba(0, 0, 0, 0.2);
 }
 
 .topLeft,
@@ -100,7 +102,7 @@ textarea {
 .topListItem {
   margin-right: 20px;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 350;
   cursor: pointer;
 }
 
@@ -381,26 +383,52 @@ textarea {
 }
 
 .articleTitle {
-  font-size: 24px;
-  font-family: "Josefin Sans", sans-serif;
-  margin-top: 15px;
+  font-size: 28px;
+  font-family: "Lora", serif;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.articleEdit {
+  float: right;
+  font-size: 18px;
+}
+
+.articleIcon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.articleIcon:first-child {
+  color: teal;
+}
+
+.articleIcon:last-child {
+  color: tomato;
+}
+
+.articleInfo {
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.articleEdit {
   font-size: 16px;
+  color: #b39656;
+  font-family: "Varela Round", sans-serif;
 }
 
-.articleEdit .articleIcon {
-  color: #444;
-  margin-left: 10px;
-  cursor: pointer;
+.articleDesc {
+  color: #666;
+  font-size: 18;
+  line-height: 25px;
+}
+
+.articleDesc::first-letter {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */

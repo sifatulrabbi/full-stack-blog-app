@@ -1,5 +1,5 @@
-import React from "react";
-import { img2 } from "../../Images";
+import React from 'react';
+import { img2 } from '../../Images';
 
 const Article: React.FC = () => {
   return (
@@ -19,7 +19,7 @@ const Article: React.FC = () => {
           </span>
           <span className="articleDate">1 hour ago</span>
         </div>
-        <p>
+        <p className="articleDesc">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
           eius. Molestiae suscipit facere odio aliquid, fuga, maxime omnis
           delectus aut beatae labore officia reprehenderit expedita quos

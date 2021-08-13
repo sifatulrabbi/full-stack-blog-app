@@ -1,5 +1,5 @@
-import React from "react";
-import { meImg } from "../../Images";
+import React from 'react';
+import { meImg } from '../../Images';
 
 const TopBar: React.FC = () => {
   return (

@@ -1,4 +1,4 @@
-@import "./variables";
+@import './variables';
 
 .articlePage {
   display: flex;
@@ -21,20 +21,46 @@
 }
 
 .articleTitle {
-  font-size: 24px;
-  font-family: $josefin;
-  margin-top: 15px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  font-size: 28px;
+  font-family: $lora;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .articleEdit {
-  font-size: 16px;
+  float: right;
+  font-size: 18px;
+}
+.articleIcon {
+  margin-left: 10px;
+  cursor: pointer;
 
-  .articleIcon {
-    color: $textPrimary;
-    margin-left: 10px;
-    cursor: pointer;
+  &:first-child {
+    color: teal;
+  }
+
+  &:last-child {
+    color: tomato;
+  }
+}
+
+.articleInfo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #b39656;
+  font-family: $varela;
+}
+
+.articleDesc {
+  color: #666;
+  font-size: 18;
+  line-height: 25px;
+
+  &::first-letter {
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
   }
 }

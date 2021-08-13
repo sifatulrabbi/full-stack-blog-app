@@ -1,5 +1,5 @@
-import React from "react";
-import { Article, Sidebar } from "../../Components";
+import React from 'react';
+import { Article, Sidebar } from '../../Components';
 
 const ArticlePage: React.FC = () => {
   return (
