@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { meImg } from '../../Images';
 
 const TopBar: React.FC = () => {
+  const user: boolean = true;
+
   return (
     <div className="top">
       <div className="topIcon topLeft">
@@ -11,15 +14,36 @@ const TopBar: React.FC = () => {
       </div>
       <div className="topCenter">
         <ul className="topList">
-          <li className="topListItem">Home</li>
-          <li className="topListItem">About</li>
-          <li className="topListItem">Contact</li>
-          <li className="topListItem">Write</li>
-          <li className="topListItem">Logout</li>
+          <li className="topListItem">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="topListItem">
+            <Link to="/about">About</Link>
+          </li>
+          <li className="topListItem">
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li className="topListItem">
+            <Link to="/write">Write</Link>
+          </li>
+          <li className="topListItem">
+            <Link to="/login">Logout</Link>
+          </li>
         </ul>
       </div>
       <div className="topRight">
-        <img className="topImg" src={meImg} alt="Me" />
+        {user ? (
+          <img className="topImg" src={meImg} alt="Me" />
+        ) : (
+          <>
+            <Link className="topListItem" to="/login">
+              Login
+            </Link>
+            <Link className="topListItem" to="/register">
+              Register
+            </Link>
+          </>
+        )}
         <i className="topIcon search fas fa-search"></i>
       </div>
     </div>

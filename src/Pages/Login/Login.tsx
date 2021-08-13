@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Login: React.FC = () => {
   return (
@@ -12,7 +13,9 @@ const Login: React.FC = () => {
           <input type="password" placeholder="Enter your password" />
           <button className="loginBtn">Login</button>
           <span style={{ textAlign: 'center' }}>or</span>
-          <button className="loginBtn reg">Register</button>
+          <Link to="/register">
+            <button className="loginBtn reg">Register</button>
+          </Link>
         </form>
       </div>
     </div>

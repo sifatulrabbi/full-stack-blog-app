@@ -44,7 +44,6 @@
   display: flex;
   justify-content: center;
   list-style-type: none;
-  text-transform: uppercase;
 }
 
 .topListItem {
@@ -52,6 +51,7 @@
   font-size: 18px;
   font-weight: 350;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .topIcon.search {
