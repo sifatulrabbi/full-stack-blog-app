@@ -494,5 +494,114 @@ textarea {
   cursor: pointer;
   border-radius: 10px;
   font-size: 16px;
+  text-transform: uppercase;
+}
+
+.settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.settingsWrapper {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  padding: 20px;
+}
+
+.settingsTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.settingsUpdateTitle {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: lightcoral;
+}
+
+.settingsDeleteTitle {
+  color: red;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.settingsForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.settingsForm label {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.settingsForm input {
+  color: gray;
+  margin: 10px 0;
+  height: 30px;
+  border-bottom: 1px solid lightgray;
+}
+
+.settingsDP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.settingsDP img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+}
+
+.settingsDPIcon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: lightcoral;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.settingsSubmit {
+  width: 150px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  background-color: teal;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */
