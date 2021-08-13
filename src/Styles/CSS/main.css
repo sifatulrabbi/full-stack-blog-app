@@ -606,6 +606,7 @@ textarea {
 }
 
 .login {
+  position: relative;
   height: calc(100vh - 50px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -647,6 +648,8 @@ textarea {
 }
 
 .loginForm {
+  width: 85%;
+  margin: 0 auto;
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -676,6 +679,7 @@ textarea {
 
 .loginBtn {
   margin-top: 20px;
+  margin-bottom: 10px;
   cursor: pointer;
   background-color: lightcoral;
   color: #fff;
@@ -686,6 +690,6 @@ textarea {
 
 .loginBtn.reg {
   background-color: teal;
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,7 @@
 @import './variables';
 
 .login {
+  position: relative;
   height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
@@ -34,6 +35,8 @@
 }
 
 .loginForm {
+  width: 85%;
+  margin: 0 auto;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -55,6 +58,7 @@
 
 .loginBtn {
   margin-top: 20px;
+  margin-bottom: 10px;
   cursor: pointer;
   background-color: lightcoral;
   color: #fff;
@@ -64,6 +68,6 @@
 
   &.reg {
     background-color: teal;
-    margin-top: 10px;
+    margin-bottom: 20px;
   }
 }
