@@ -1,10 +1,10 @@
 import React from 'react';
-import { img3 } from '../../Images';
+import { img1 as img } from '../../Images';
 
 const Write: React.FC = () => {
   return (
     <div className="write">
-      <img src={img3} alt="" className="writeImg" />
+      <img src={img} alt="" className="writeImg" />
       <form className="writeForm">
         <div className="writeFormGroup">
           <label htmlFor="fileInput" className="writeIcon">

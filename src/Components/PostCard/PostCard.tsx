@@ -1,5 +1,5 @@
-import React from "react";
-import { img2 } from "../../Images";
+import React from 'react';
+import { img2 } from '../../Images';
 
 const PostCard: React.FC = () => {
   return (
