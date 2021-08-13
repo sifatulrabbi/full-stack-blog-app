@@ -1,6 +1,6 @@
 import React from 'react';
 import { TopBar } from './Components';
-import { ArticlePage, Home, Settings, Write } from './Pages';
+import { ArticlePage, Home, Login, Settings, Write } from './Pages';
 import './Styles/CSS/main.css';
 
 const App: React.FC = () => {
@@ -10,7 +10,8 @@ const App: React.FC = () => {
       {/* <Home /> */}
       {/* <ArticlePage /> */}
       {/* <Write /> */}
-      <Settings />
+      {/* <Settings /> */}
+      <Login />
     </>
   );
 };

@@ -18,6 +18,8 @@
         "../Scss/_variables.scss",
         "../Scss/_write.scss",
         "../Scss/_settings.scss",
+        "../Scss/_variables.scss",
+        "../Scss/_login.scss",
         "../Scss/_variables.scss"
     ],
     "names": [],
