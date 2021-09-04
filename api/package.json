@@ -10,7 +10,9 @@
   "name": "api",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "typescript": "^4.4.2"
+  },
   "scripts": {
     "start": "nodemon index.js"
   },

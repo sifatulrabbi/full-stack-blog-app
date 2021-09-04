@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const bcrypt = require('bcrypt');
-const User = require('../modals/User');
-const Post = require('../modals/Post');
+const User = require('../models/User');
+const Post = require('../models/Post');
 
 const addSalt = async (password) => {
   const salt = await bcrypt.genSalt(10);
