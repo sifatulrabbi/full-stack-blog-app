@@ -5,7 +5,7 @@ import { ArticlePage, Home, Login, Register, Settings, Write } from './Pages';
 import './Styles/CSS/main.css';
 
 const App: React.FC = () => {
-  const user: boolean = true;
+  const user: boolean = false;
 
   return (
     <Router>

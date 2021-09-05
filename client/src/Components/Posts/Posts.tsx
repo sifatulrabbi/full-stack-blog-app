@@ -1,15 +1,17 @@
-import React from "react";
-import { PostCard } from "..";
+import React from 'react';
+import { PostCard } from '..';
+import { PostType } from '../../types';
 
-const Posts: React.FC = () => {
+interface Props {
+  posts: PostType[];
+}
+
+const Posts: React.FC<Props> = ({ posts }) => {
   return (
     <div className="posts">
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <PostCard />
+      {posts.map((post) => (
+        <PostCard key={post._id} post={post} />
+      ))}
     </div>
   );
 };

@@ -1,41 +1,30 @@
 import React from 'react';
-import { img2 } from '../../Images';
+import { Link } from 'react-router-dom';
+import { PostType } from '../../types';
 
-const PostCard: React.FC = () => {
+interface Props {
+  post: PostType;
+}
+
+const PostCard: React.FC<Props> = ({ post }) => {
   return (
     <div className="postCard">
-      <img src={img2} alt="" className="postCardImg" />
+      {post.photo && <img src={post.photo} alt="" className="postCardImg" />}
       <div className="postCardInfo">
         <div className="postCardCats">
-          <span className="postCardCat">Music</span>
-          <span className="postCardCat">Life</span>
+          {post.categories.map((cat) => (
+            <span key={cat + Date.now()} className="postCardCat">
+              {cat}
+            </span>
+          ))}
         </div>
-        <span className="postCardTitle">
-          Lorem ipsum dolor sit amet consectetur.
-        </span>
+        <Link to={`/post/${post._id}`}>
+          <span className="postCardTitle">{post.title}</span>
+        </Link>
         <hr />
-        <span className="postCardDate">1 hour ago</span>
+        <span className="postCardDate">{new Date(post.createdAt).toDateString()}</span>
       </div>
-      <p className="postCardDesc">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut,
-        numquam nihil voluptas optio est error et adipisci id quaerat deleniti
-        obcaecati nemo fugiat! Inventore eum qui quia facere possimus? Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Quas aut, numquam
-        nihil voluptas optio est error et adipisci id quaerat deleniti obcaecati
-        nemo fugiat! Inventore eum qui quia facere possimus? Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Quas aut, numquam nihil voluptas
-        optio est error et adipisci id quaerat deleniti obcaecati nemo fugiat!
-        Inventore eum qui quia facere possimus? Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Quas aut, numquam nihil voluptas optio est
-        error et adipisci id quaerat deleniti obcaecati nemo fugiat! Inventore
-        eum qui quia facere possimus? Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quas aut, numquam nihil voluptas optio est error et
-        adipisci id quaerat deleniti obcaecati nemo fugiat! Inventore eum qui
-        quia facere possimus? Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Quas aut, numquam nihil voluptas optio est error et adipisci id
-        quaerat deleniti obcaecati nemo fugiat! Inventore eum qui quia facere
-        possimus?
-      </p>
+      <p className="postCardDesc">{post.desc}</p>
     </div>
   );
 };
